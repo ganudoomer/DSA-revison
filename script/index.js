@@ -1,3 +1,4 @@
-console.log("Hello World");
-console.log("Heloo Worl");
-console.log("Hey")
+import run from './frequnecyCounter.js'
+
+run()
+console.log("Working log");
