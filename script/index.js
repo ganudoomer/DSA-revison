@@ -1,4 +1,3 @@
-import run from './frequnecyCounter.js'
+import run from './multi-pointer/countUniqueValues.js'
 
 run()
-console.log("Working log");
