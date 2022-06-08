@@ -1,5 +1,5 @@
 export default function main() {
-    let arr = [1]
+    let arr = [1,2,3,3,3,3,3,4,5,6,7,8,9]
     let count = 0
     let pointerOne = 0 
     let pointerTwo = 1 
@@ -16,8 +16,5 @@ export default function main() {
      }
     
     
-
-   
-
     console.log(count+1)
 }

@@ -1,3 +1,3 @@
-import run from './multi-pointer/countUniqueValues.js'
+import run from './slidingWindow/maxSubarraySum.js'
 
 run()
