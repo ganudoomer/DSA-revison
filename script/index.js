@@ -1,3 +1,3 @@
-import run from './slidingWindow/findLongestSubstring.js'
+import run from './recursion/faltten.js'
 
 run()
