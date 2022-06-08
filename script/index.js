@@ -1,3 +1,3 @@
-import run from './slidingWindow/maxSubarraySum.js'
+import run from './slidingWindow/findLongestSubstring.js'
 
 run()
