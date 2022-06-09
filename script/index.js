@@ -1,3 +1,3 @@
-import run from './recursion/faltten.js'
+import run from './searching/binary.js'
 
 run()

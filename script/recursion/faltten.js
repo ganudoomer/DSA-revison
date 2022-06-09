@@ -1,6 +1,6 @@
 export default function main() {
 
-   console.log(flatten([[[[1], [[[2]]], [[[[[[[3]]]]]]]]]]))    
+   console.log(flatten([[[[1], [[[2]]], [[[[[[[3],[[[[[[5]]]]]]]]]]]]]]]))    
 
    
    function flatten(arr) {
