@@ -1,3 +1,3 @@
-import run from './searching/binary.js'
+import run from './linkedlist/index.js'
 
 run()
