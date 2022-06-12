@@ -4,10 +4,13 @@ export default function main(params) {
     l.push(10)
     l.push(11)
     l.push(12)
-    console.log(
-       l.pop()
-       );
-       console.log(l);
+    console.log(l);
+    console.log(l.pop());
+    console.log(l);
+    console.log(l.pop());
+    console.log(l);
+    console.log(l.pop());
+    console.log(l);
 }
 
 
@@ -23,6 +26,7 @@ class LinkedList {
      if(!this.head){
         this.head = newNode
         this.tail = newNode
+        this.length++
         return;
      }
      let current = this.head
@@ -31,9 +35,18 @@ class LinkedList {
      }
      current.next = newNode
      this.tail = current.next
+     this.length++
    }
 
    pop(){
+       if(!this.head) return undefined
+       if(this.length  === 1){
+         let temp = this.head
+         this.head = null
+         this.head = null
+         this.length--
+         return temp
+       }
        let currentNode = this.head
        while(currentNode.next.next){
          currentNode = currentNode.next
@@ -41,6 +54,7 @@ class LinkedList {
        let temp = currentNode.next
        currentNode.next = null
        this.tail = currentNode
+       this.length--
        return temp
    }
 
