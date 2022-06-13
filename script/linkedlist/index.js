@@ -4,19 +4,20 @@ export default function main(params) {
   l.push(10);
   l.push(11);
   l.push(12);
-  console.log(l);
-  console.log(l.shift());
-  console.log(l);
-  l.unshift(30);
-  console.log(l);
-  console.log(l.get(2));
-  l.set(2, 90);
-  console.log(l.get(2));
-  l.insert(2,66)
-  console.log(l);
-  console.log(l.remove(1));
-  console.log(l);
-  console.log(l.reverse());
+  // console.log(l);
+  // console.log(l.shift());
+  // console.log(l);
+  // l.unshift(30);
+  // console.log(l);
+  // console.log(l.get(2));
+  // l.set(2, 90);
+  // console.log(l.get(2));
+  // l.insert(2,66)
+  // console.log(l);
+  // console.log(l.remove(1));
+  // console.log(l);
+  // console.log(l.reverse());
+  console.log(l.reverse2());
 }
 
 class LinkedList {
@@ -106,7 +107,7 @@ class LinkedList {
    let newNode = new Node(val)
    let prev = this.get(index)
    let current =  prev.next
-   
+   this.length++
    newNode.next = current
    prev.next = newNode
   }
@@ -115,6 +116,7 @@ class LinkedList {
      let prevNode = this.get(index-1)
      let removed = prevNode.next
      prevNode.next = removed.next
+     this.length--
      return removed
   }
 
@@ -128,6 +130,25 @@ class LinkedList {
     left.next = right 
     return this.r(left,tempNext)
   }
+
+  reverse2(){
+    var node = this.head
+    this.head = this.tail
+    this.tail =  node 
+    var next 
+    var prev = null 
+   
+    for(let i=0; i < this.length; i++){
+      next = node.next
+      node.next = prev
+      prev = node
+      node = next
+    }
+         
+    return this
+
+  }
+
 
 
 }
