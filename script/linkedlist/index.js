@@ -10,6 +10,8 @@ export default function main(params) {
   l.unshift(30);
   console.log(l);
   console.log(l.get(2));
+  l.set(2, 90);
+  console.log(l.get(2));
 }
 
 class LinkedList {
@@ -87,6 +89,11 @@ class LinkedList {
       currentNode = currentNode.next;
       currentIndex++;
     }
+  }
+
+  set(index, val) {
+    let node = this.get(index);
+    node.val = val;
   }
 }
 
