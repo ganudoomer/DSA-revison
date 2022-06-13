@@ -12,6 +12,10 @@ export default function main(params) {
   console.log(l.get(2));
   l.set(2, 90);
   console.log(l.get(2));
+  l.insert(2,66)
+  console.log(l);
+  console.log(l.remove(1));
+  console.log(l);
 }
 
 class LinkedList {
@@ -95,6 +99,28 @@ class LinkedList {
     let node = this.get(index);
     node.val = val;
   }
+
+  insert(index,val){
+   // Should handle a bunch of edge cases 
+   let newNode = new Node(val)
+   let prev = this.get(index)
+   let current =  prev.next
+   
+   newNode.next = current
+   prev.next = newNode
+  }
+
+  remove(index){
+     let prevNode = this.get(index-1)
+     let removed = prevNode.next
+     prevNode.next = removed.next
+     return removed
+  }
+
+  reverse(){
+   
+  }
+
 }
 
 class Node {
