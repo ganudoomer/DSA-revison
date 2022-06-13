@@ -16,6 +16,7 @@ export default function main(params) {
   console.log(l);
   console.log(l.remove(1));
   console.log(l);
+  console.log(l.reverse());
 }
 
 class LinkedList {
@@ -118,8 +119,16 @@ class LinkedList {
   }
 
   reverse(){
-   
+      return this.r(null,this.head)
   }
+  
+  r(right,left){
+    if(!left) return right
+    let tempNext = left.next
+    left.next = right 
+    return this.r(left,tempNext)
+  }
+
 
 }
 
