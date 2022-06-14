@@ -1,3 +1,3 @@
-import run from './doublyLinkedList/index.js'
+import run from './bts/index.js'
 
 run()
