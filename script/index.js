@@ -1,3 +1,3 @@
-import run from './hashes/index.js'
+import run from './graph/index.js'
 
 run()
