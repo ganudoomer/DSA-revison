@@ -1,3 +1,3 @@
-import run from './binaryHeap/index.js'
+import run from './hashes/index.js'
 
 run()
