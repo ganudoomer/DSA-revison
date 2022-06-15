@@ -1,3 +1,3 @@
-import run from './bts/index.js'
+import run from './binaryHeap/index.js'
 
 run()
