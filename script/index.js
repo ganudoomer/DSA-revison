@@ -1,3 +1,3 @@
-import run from './graph/index.js'
+import run from './weightedGraph/index.js'
 
 run()
