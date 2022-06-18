@@ -67,8 +67,9 @@ class WeightedGraph {
             if(smallest ||  distances[smallest]  !== Infinity) {
                   for(let neighbor in this.adjacencyList[smallest]){
                         let nextNode = this.adjacencyList[smallest][neighbor]
-                        console.log(nextNode);   
                         let candidate = distances[smallest] + nextNode.weight
+                        console.log(nextNode,candidate);   
+                        
                         let nextNeighbor = nextNode.node
                         console.log(candidate);
                         if(candidate < distances[nextNeighbor]){

@@ -1,3 +1,3 @@
-import run from './weightedGraph/index.js'
+import run from './shortestDistanceInGraph/index'
 
 run()
