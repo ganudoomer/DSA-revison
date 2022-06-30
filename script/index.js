@@ -1,3 +1,3 @@
-import run from './sorting/quickSort.js'
+import run from './problems/findKLargestNumber.js'
 
 run()
