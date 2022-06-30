@@ -1,5 +1,4 @@
 export default function main() {
-    console.log("Hey");
     let graph = new WeightedGraph()
     graph.addVertex("A");
     graph.addVertex("B");

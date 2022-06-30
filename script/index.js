@@ -1,3 +1,3 @@
-import run from './shortestDistanceInGraph/index'
+import run from './sorting/quickSort.js'
 
 run()
