@@ -1,3 +1,3 @@
-import run from './problems/findKLargestNumber.js'
+import run from './grokking/slidingWindow/SmallestSubarray.js'
 
 run()
