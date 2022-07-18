@@ -1,3 +1,3 @@
-import run from './grokking/slidingWindow/longestSubStringWithK.js'
+import run from './grokking/slidingWindow/LongestSubarraywithOnesafterReplacement.js'
 
 run()
