@@ -1,3 +1,3 @@
-import run from './grokking/slidingWindow/LongestSubarraywithOnesafterReplacement.js'
+import run from './grokking/slidingWindow/PermutationInAString.js'
 
 run()
