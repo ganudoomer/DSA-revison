@@ -1,3 +1,3 @@
-import run from './grokking/slidingWindow/PermutationInAString.js'
+import run from "./grokking/pointer/SquaringASortedArray.js";
 
-run()
+run();
