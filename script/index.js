@@ -1,3 +1,3 @@
-import run from "./grokking/pointer/SquaringASortedArray.js";
+import run from "./grokking/pointer/TripletSumToZero.js";
 
 run();
