@@ -1,3 +1,3 @@
-import run from "./grokking/pointer/DutchNationalFlagProblem.js";
+import run from "./grokking/pointer/QuadrupleSumToTarget.js";
 
 run();
