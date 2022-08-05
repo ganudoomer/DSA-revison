@@ -1,3 +1,3 @@
-import run from "./grokking/fast_slow_pointer/StartOfLinkedListCycle.js";
+import run from "./grokking/fast_slow_pointer/MiddleOfLinkedList.js";
 
 run();
