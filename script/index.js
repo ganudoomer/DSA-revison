@@ -1,3 +1,3 @@
-import run from "./grokking/fast_slow_pointer/RearrangeALinkedList.js";
+import run from "./grokking/MergeInterval/MergeIntervals.js";
 
-run();
+console.log(run());
