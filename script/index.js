@@ -1,3 +1,3 @@
-import run from "./grokking/MergeInterval/MergeIntervals.js";
+import run from "./sorting/quickSort.js";
 
 console.log(run());
